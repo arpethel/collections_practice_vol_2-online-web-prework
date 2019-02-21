@@ -15,9 +15,14 @@ def remove_non_strings(arr)
   arr.delete_if { |ele| ele != ele.to_s }
 end
 
-# def count_elements(arr, ele)
-#   arr.count(ele)
-# end
+def count_elements(arr)
+  counts = Hash.new(0)
+  arr.collect {|element| counts[element]+=1 }
+    counts.collect do |hash, number|
+      hash[:count] = number
+    end
+  counts.keys
+end
 
 def merge_data(h1, h2)
   h1.each do |data1|
