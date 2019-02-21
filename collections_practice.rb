@@ -31,3 +31,7 @@ def merge_data(h1, h2)
     end
   end
 end
+
+def find_cool(hash)
+  hash.select { |entry| entry if entry.has_value?("cool")}
+end
