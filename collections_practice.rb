@@ -22,7 +22,7 @@ end
 def merge_data(h1, h2)
   h1.each do |data1|
     h2.each do |data2|
-      data1.merge!(data2[data1[:merged_data]])
+      data1.merge!(data2[data1[:merges_data]])
     end
   end
 end
