@@ -15,9 +15,6 @@ def remove_non_strings(arr)
   arr.delete_if { |ele| ele != ele.to_s }
 end
 
-def count_elements(arr)
-  arr.count { |ele| }
-
-# def count_elements(array, ele)
-#   array.count(ele)
-# end
+def count_elements(arr, ele)
+  arr.count(ele)
+end
