@@ -18,6 +18,6 @@ end
 def count_elements(arr)
   arr.count { |ele| }
 
-def count_elements(array, ele)
-  array.count(ele)
-end
+# def count_elements(array, ele)
+#   array.count(ele)
+# end
