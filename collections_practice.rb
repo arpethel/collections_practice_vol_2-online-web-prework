@@ -19,12 +19,13 @@ end
 #   arr.count(ele)
 # end
 
-def merge_data(arr1, arr2)
-  my_arr = []
-
-  arr1.each do |ele1|
-    arr2.each do |ele2|
-      ele1.merge!(ele2[ele1[:some_thing]])
-    end
-  end
+def merge_data(hash1, hash2)
+  hash1.merge!(hash2)
+  # my_arr = []
+  #
+  # arr1.each do |ele1|
+  #   arr2.each do |ele2|
+  #     ele1.merge!(ele2[ele1[:some_thing]])
+  #   end
+  # end
 end
